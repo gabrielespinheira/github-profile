@@ -1,7 +1,22 @@
-# RecoilJs
+<h1 align="center">
+  <br>
+  RecoilJs
+</h1>
 
-## Alternatives
+<p>
+  Aplicação desenvolvida com o intuito de estudar a nova biblioteca de gerenciamento de estado do Facebook, batizada de RecoilJs. Aplicação permite criar uma lista de usuários do GitHub através do username e mostrar a quantidade de seguidores, se conectando diretamente a API do GitHub
+</p>
 
-- [ ] Redux
-- [ ] MobX
-- [ ] React Context
+### Tecnologias
+
+- [x] [ReactJs](https://pt-br.reactjs.org/)
+- [x] RecoilJs - [Repositório](https://github.com/facebookexperimental/Recoil) | [Documentação Oficial](https://recoiljs.org/)
+- [x] [React Router Dom](https://www.npmjs.com/package/react-router-dom)
+- [x] [Axios](https://github.com/axios/axios)
+
+### Tutorial
+
+1. `git clone git@github.com:ogabrielaraujo/RecoilJs.git`
+2. `cd RecoilJs`
+3. `yarn install`
+4. `yarn start`
