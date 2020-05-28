@@ -6,7 +6,8 @@ import { github_username } from '../index'
 export const userState = selector({
   key: 'userState',
   get: async ({ get }) => {
-    const _user = get(github_username)
+    let _user = get(github_username)
+    _user = _user.trim()
 
     const cachedUser = await JSON.parse(localStorage.getItem(`${_user}_user`))
     const cachedRepos = await JSON.parse(localStorage.getItem(`${_user}_repos`))
@@ -27,12 +28,18 @@ export const userState = selector({
 
       const repos = []
 
-      userRepos.some((repo, i) => {
-        if (i > 5) return true
+      for (var i = 0; i <= userRepos.length; i++) {
+        if (repos.length >= 6) {
+          break
+        }
 
-        console.log(repo.description)
-
+        let repo = userRepos[i]
         let description = ''
+
+        console.log(repo)
+
+        if (repo.fork && repo.fork === true) continue
+        if (repo.private && repo.private === false) continue
 
         if (typeof repo.description === 'string') {
           description =
@@ -47,7 +54,9 @@ export const userState = selector({
           description,
           name: repo.name,
         })
-      })
+      }
+
+      console.log(repos)
 
       localStorage.setItem(`${_user}_user`, JSON.stringify(userInfo.data))
       localStorage.setItem(`${_user}_repos`, JSON.stringify(repos))
