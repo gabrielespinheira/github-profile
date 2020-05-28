@@ -3,7 +3,6 @@ import { useHistory } from 'react-router-dom'
 import { useRecoilState } from 'recoil'
 
 import { Container } from './styles'
-import Card from '../../components/Card'
 import { FiSearch } from 'react-icons/fi'
 import { github_username } from '../../atoms/users'
 
@@ -27,7 +26,7 @@ function Welcome() {
     <Container>
       <h1>Faaaaala, dev!</h1>
 
-      <Card>
+      <section className="card">
         <h2>Digite um usuário do GitHub</h2>
 
         <form onSubmit={submit}>
@@ -37,7 +36,7 @@ function Welcome() {
             <FiSearch color="#367DFF" size={24} />
           </button>
         </form>
-      </Card>
+      </section>
     </Container>
   )
 }

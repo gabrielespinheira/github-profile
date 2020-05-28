@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { Container } from './styles'
-import Card from '../../components/Card'
 import ShadowName from '../../components/ShadowName'
 import { FiGithub, FiAtSign } from 'react-icons/fi'
 
@@ -9,7 +8,8 @@ function User({ user, repos }) {
   return (
     <Container>
       <ShadowName name={user.login} />
-      <Card>
+
+      <section className="card">
         <div className="stats">
           <div className="infos">
             <h1>{user.name}</h1>
@@ -68,7 +68,7 @@ function User({ user, repos }) {
             </a>
           ))}
         </div>
-      </Card>
+      </section>
     </Container>
   )
 }

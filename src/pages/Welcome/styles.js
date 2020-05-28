@@ -7,6 +7,17 @@ export const Container = styled.div`
   height: calc(100% - 50px);
   flex-direction: column;
 
+  .card {
+    background: #fff;
+    width: 100%;
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 20px 200px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+  }
+
   h1 {
     font-size: 32px;
     font-weight: bold;

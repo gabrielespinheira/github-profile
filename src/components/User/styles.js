@@ -7,6 +7,18 @@ export const Container = styled.div`
   align-items: center;
   flex: 1;
 
+  .card {
+    background: #fff;
+    width: 100%;
+    max-width: 670px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 20px 200px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 150px;
+  }
+
   .stats {
     position: relative;
     display: flex;
@@ -143,6 +155,59 @@ export const Container = styled.div`
         color: var(--lightgray);
         margin-top: 7px;
       }
+    }
+  }
+
+  @media (max-width: 780px) {
+    .card {
+      margin-top: 80px;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .card {
+      margin-top: 50px;
+    }
+
+    .stats {
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 40px;
+
+      .infos {
+        margin-top: 60px;
+        width: 100%;
+        max-width: 350px;
+
+        h1,
+        h2 {
+          text-align: center;
+          height: auto;
+        }
+
+        .numbers {
+          margin-top: 30px;
+        }
+      }
+
+      .media {
+        position: relative;
+        top: initial;
+        right: initial;
+        margin-top: -60px;
+      }
+    }
+
+    .repos {
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media (max-width: 350px) {
+    .stats .infos .numbers .num_repo span + span {
+      font-size: 14px;
     }
   }
 `
