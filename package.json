@@ -1,11 +1,17 @@
 {
-  "name": "recoiljs",
-  "version": "0.1.0",
-  "private": true,
+  "name": "github_profile",
+  "version": "0.0.1",
+  "private": false,
+  "license": "MIT",
+  "author": {
+    "name": "Gabriel Araujo",
+    "email": "gabriiel66@gmail.com",
+    "url": "http://ogabrielaraujo.com.br"
+  },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
+    "@testing-library/jest-dom": "^5.8.0",
+    "@testing-library/react": "^10.0.4",
+    "@testing-library/user-event": "^10.4.0",
     "axios": "^0.19.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
