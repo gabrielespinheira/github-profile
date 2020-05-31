@@ -21,6 +21,12 @@
 
 </p>
 
+<p align="center">
+  <a href="https://profile-github.netlify.app/">
+    <img src="https://i.imgur.com/RZQpw7H.png" width="600" />
+  </a>
+</p>
+
 ## :link: Links
 
 - [Acessar o Site](https://profile-github.netlify.app/)
@@ -41,6 +47,14 @@
 - [x] [React Router Dom](https://www.npmjs.com/package/react-router-dom)
 - [x] [Axios](https://github.com/axios/axios)
 - [x] [Styled Components](https://styled-components.com/)
+
+## :computer: Prints
+
+<img src="https://i.imgur.com/RZQpw7H.png" />
+
+<img src="https://i.imgur.com/InRQxdy.png" />
+
+<img src="https://i.imgur.com/MoJs1kR.png" />
 
 ## :construction: Tutorial
 
