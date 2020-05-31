@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { lazy } from 'react'
 import { useRecoilValue } from 'recoil'
 
 import { Container } from './styles'
 import Loading from '../../components/Loading'
 import NotFound from '../../components/NotFound'
-import User from '../../components/User'
 import { userState } from '../../atoms/users/selectors/userState'
+
+const LoadUser = lazy(() => {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(import('../../components/User')), 1500)
+  })
+})
 
 function Profile() {
   function Content() {
@@ -15,7 +20,7 @@ function Profile() {
       return <NotFound message={response.message} />
     }
 
-    return <User user={response.user} repos={response.repos} />
+    return <LoadUser user={response.user} repos={response.repos} />
   }
 
   return (
