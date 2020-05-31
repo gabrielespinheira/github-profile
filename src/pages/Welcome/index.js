@@ -33,7 +33,7 @@ function Welcome() {
           <input type="text" name="username" onChange={handleChangeInput} />
 
           <button type="submit" name="submit">
-            <FiSearch color="#367DFF" size={24} />
+            <FiSearch size={24} />
           </button>
         </form>
       </section>

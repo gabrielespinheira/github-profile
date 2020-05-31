@@ -16,18 +16,25 @@ export const Container = styled.div`
     box-shadow: 0px 20px 200px rgba(0, 0, 0, 0.15);
     border-radius: 10px;
     padding: 25px;
+    color: var(--font);
+
+    @media (prefers-color-scheme: dark) {
+      box-shadow: none;
+    }
   }
 
   h1 {
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 40px;
+    color: var(--font);
   }
 
   h2 {
     font-size: 23px;
     font-weight: 400;
     margin-bottom: 20px;
+    color: var(--font);
   }
 
   form {
@@ -46,12 +53,15 @@ export const Container = styled.div`
       font-weight: 400;
       line-height: 1;
       padding: 10px;
+      background: var(--card);
+      color: var(--font);
     }
 
     button {
       background: transparent;
       border: none;
       padding: 10px;
+      color: var(--primary);
     }
   }
 

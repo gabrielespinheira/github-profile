@@ -44,12 +44,13 @@ export default createGlobalStyle`
 
   body, h1, h2, h3, h4, h5, h6, p, button, input, span {
     font-family: 'Fira Sans', sans-serif;
+    color: var(--font);
   }
 
   body {
-    color: #000;
+    color: var(--font);
     background: var(--body);
-    font-weight: 400;
+    font-weight: var(--regular);
   }
 
   button {
