@@ -54,4 +54,23 @@ export const Container = styled.div`
       padding: 10px;
     }
   }
+
+  @media (max-width: 780px) {
+    width: 100%;
+    padding: 15px;
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 20px;
+    }
+
+    form {
+      padding: 5px;
+    }
+
+    .card {
+      padding: 20px;
+    }
+  }
 `
