@@ -9,4 +9,13 @@ export const Container = styled.div`
   h1 {
     margin-bottom: 30px;
   }
+
+  a {
+    background: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+  }
 `
