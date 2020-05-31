@@ -36,9 +36,6 @@ export const userState = selector({
         let repo = userRepos[i]
         let description = ''
 
-        console.log(repo)
-
-        if (repo.fork && repo.fork === true) continue
         if (repo.private && repo.private === false) continue
 
         if (typeof repo.description === 'string') {
@@ -55,8 +52,6 @@ export const userState = selector({
           name: repo.name,
         })
       }
-
-      console.log(repos)
 
       localStorage.setItem(`${_user}_user`, JSON.stringify(userInfo.data))
       localStorage.setItem(`${_user}_repos`, JSON.stringify(repos))

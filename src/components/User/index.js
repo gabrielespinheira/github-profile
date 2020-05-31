@@ -43,14 +43,16 @@ function User({ user, repos }) {
             >
               <FiGithub size={24} color="#367DFF" />
             </a>
-            <a
-              href={user.blog}
-              className="url"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FiAtSign size={24} color="#367DFF" />
-            </a>
+            {user.blog && (
+              <a
+                href={user.blog}
+                className="url"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiAtSign size={24} color="#367DFF" />
+              </a>
+            )}
           </div>
         </div>
 
