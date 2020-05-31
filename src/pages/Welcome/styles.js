@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   .card {
-    background: #fff;
+    background: var(--card);
     width: 100%;
     max-width: 670px;
     display: flex;

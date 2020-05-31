@@ -8,7 +8,7 @@ export const Container = styled.div`
   flex: 1;
 
   .card {
-    background: #fff;
+    background: var(--card);
     width: 100%;
     max-width: 670px;
     display: flex;
@@ -32,11 +32,13 @@ export const Container = styled.div`
       h1 {
         font-size: 27px;
         font-weight: var(--bold);
+        color: var(--font);
         margin-bottom: 10px;
       }
 
       h2 {
         font-size: 18px;
+        color: var(--font);
         font-weight: var(--regular);
         height: 66px;
       }
@@ -47,6 +49,7 @@ export const Container = styled.div`
         justify-content: space-between;
         align-items: center;
         margin-top: 20px;
+        color: var(--font);
 
         .num_repo {
           display: flex;
@@ -93,6 +96,7 @@ export const Container = styled.div`
         align-items: center;
         justify-content: center;
         transition: all 0.5s;
+        color: var(--primary);
 
         &:hover {
           background-color: var(--primary);
@@ -129,6 +133,7 @@ export const Container = styled.div`
       background: var(--white);
       border: 1px solid var(--borderColor);
       padding: 12px 15px;
+      color: var(--font);
       border-radius: 5px;
       transition: all 0.5s;
 
@@ -139,13 +144,14 @@ export const Container = styled.div`
 
         div,
         span {
-          color: var(--white);
+          color: var(--primaryHover);
           transition: all 0.3s;
         }
       }
 
       div {
         font-size: 16px;
+        color: var(--font);
         font-weight: var(--bold);
       }
 

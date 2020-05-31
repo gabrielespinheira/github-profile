@@ -13,6 +13,12 @@ export const Font = styled.div`
   text-shadow: 0 -10px 100px rgba(0, 0, 0, 0.1);
   transform: translateX(-50%);
 
+  @media (prefers-color-scheme: dark) {
+    background: -webkit-linear-gradient(#282a36, #1c1d25);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
   @media (max-width: 1200px) {
     font-size: 13vw;
     top: 3vw;

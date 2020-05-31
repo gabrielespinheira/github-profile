@@ -41,7 +41,7 @@ function User({ user, repos }) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiGithub size={24} color="#367DFF" />
+              <FiGithub size={24} />
             </a>
             {user.blog && (
               <a
@@ -50,7 +50,7 @@ function User({ user, repos }) {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <FiAtSign size={24} color="#367DFF" />
+                <FiAtSign size={24} />
               </a>
             )}
           </div>
