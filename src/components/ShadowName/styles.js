@@ -12,6 +12,17 @@ export const Font = styled.div`
   text-align: center;
   text-shadow: 0 -10px 100px rgba(0, 0, 0, 0.1);
   transform: translateX(-50%);
+  animation-name: fadeIn;
+  animation-duration: 2s;
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
   @media (prefers-color-scheme: dark) {
     background: -webkit-linear-gradient(#282a36, #1c1d25);

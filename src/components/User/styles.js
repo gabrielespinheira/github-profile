@@ -17,6 +17,21 @@ export const Container = styled.div`
     border-radius: 10px;
     padding: 25px;
     margin-top: 150px;
+    animation-name: fadeDown;
+    animation-duration: 1.2s;
+    animation-delay: 0s;
+    animation-timing-function: cubic-bezier(0.69, 0.085, 0.39, 0.97);
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-250px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0px);
+      }
+    }
   }
 
   .stats {
