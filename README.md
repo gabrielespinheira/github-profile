@@ -42,6 +42,8 @@
 
 ## :white_check_mark: Tecnologias
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/341f8fbb0d744d5d9ec4e80e63d21886)](https://app.codacy.com/manual/ogabrielaraujo/github-profile?utm_source=github.com&utm_medium=referral&utm_content=ogabrielaraujo/github-profile&utm_campaign=Badge_Grade_Dashboard)
+
 - [x] [ReactJs](https://pt-br.reactjs.org/)
 - [x] RecoilJs - [Repositório](https://github.com/facebookexperimental/Recoil) | [Documentação Oficial](https://recoiljs.org/)
 - [x] [React Router Dom](https://www.npmjs.com/package/react-router-dom)
